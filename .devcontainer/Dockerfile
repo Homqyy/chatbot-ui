@@ -4,6 +4,6 @@ RUN apk add git proxychains-ng
 
 WORKDIR /usr/src/chatgpt-ui
 
-COPY ./chatgpt-ui/package*.json ./ 
+COPY ./package*.json ./ 
 
 RUN npm ci
