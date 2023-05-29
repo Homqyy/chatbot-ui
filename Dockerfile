@@ -21,9 +21,10 @@ COPY --from=build /app/public ./public
 COPY --from=build /app/package*.json ./
 COPY --from=build /app/next.config.js ./next.config.js
 COPY --from=build /app/next-i18next.config.js ./next-i18next.config.js
+COPY run.sh       /sbin/run.sh
 
 # Expose the port the app will run on
 EXPOSE 3000
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["/sbin/run.sh"]

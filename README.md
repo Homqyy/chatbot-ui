@@ -93,6 +93,12 @@ When deploying the application, the following environment variables can be set:
 | NEXT_PUBLIC_DEFAULT_TEMPERATURE   | 1                              | The default temperature to use on new conversations                                                                                       |
 | GOOGLE_API_KEY                    |                                | See [Custom Search JSON API documentation][GCSE]                                                                                          |
 | GOOGLE_CSE_ID                     |                                | See [Custom Search JSON API documentation][GCSE]                                                                                          |
+| PROXY_USER                        |                                | User of proxy
+| PROXY_PASSWORD                    |                                | Password of proxy
+| HTTP_PROXY_HOST                   |                                | Host of http proxy
+| HTTP_PROXY_PORT                   |                                | Port of http proxy
+| SOCKS5_PROXY_HOST                 |                                | Host of socks5 proxy
+| SOCKS5_PROXY_PORT                 |                                | Port of socks5 proxy
 
 If you do not provide an OpenAI API key with `OPENAI_API_KEY`, users will have to provide their own key.
 
