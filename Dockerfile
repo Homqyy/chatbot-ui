@@ -14,6 +14,9 @@ RUN npm run build
 
 # ---- Production ----
 FROM node:19-alpine AS production
+
+RUN apk add proxychains-ng
+
 WORKDIR /app
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY --from=build /app/.next ./.next
