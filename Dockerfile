@@ -30,4 +30,4 @@ COPY run.sh       /sbin/run.sh
 EXPOSE 3000
 
 # Start the application
-CMD ["/sbin/run.sh"]
+CMD ["sh", "/sbin/run.sh"]
